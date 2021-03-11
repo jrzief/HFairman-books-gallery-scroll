@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.css"/> -->
+  <link rel="stylesheet" href="./index.scss" />
+  <title>Document</title>
+</head>
+<body>
+  <!--
+
+1. IntersectionObserver Syntax & Oddities
+2. Image Animation with Clip Path
+
+-->
+<h1> The Fairman Collection</h1>
+<main class="gallery">
+  <figure class="gallery-image">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/61DawWX7NUL._SX346_BO1,204,203,200_.jpg" />
+   <!--  <img src="https://source.unsplash.com/kxIE049IZ1g/800x450/" /> -->
+    <figcaption>1</figcaption>
+  </figure>
+  <figure class="gallery-image">
+    <img src="https://m.media-amazon.com/images/I/71w1AIP8YNL._AC_UY218_.jpg" />
+   <!--  <img src="https://source.unsplash.com/rzc6sHvIxvY/800x600/" /> -->
+    <figcaption>2</figcaption>
+  </figure>
+  <figure class="gallery-image">
+    <img src="https://m.media-amazon.com/images/I/61ouJT58xlL._AC_UY218_.jpg" />
+    <!-- <img src="https://source.unsplash.com/ds_NPvoAzro/800x600/" /> -->
+    <figcaption>3</figcaption>
+  </figure>
+  <figure class="gallery-image">
+    <img src="https://m.media-amazon.com/images/I/41tFTHj77kL._AC_UY218_.jpg" />
+  <!--   <img src="https://source.unsplash.com/5AiWn2U10cw/600x800/" /> -->
+    <figcaption>4</figcaption>
+  </figure>
+  <figure class="gallery-image">
+    <img src="https://m.media-amazon.com/images/I/31WSs7rM6JL._AC_UY218_.jpg" />
+   <!--  <img src="https://source.unsplash.com/gnP_L4aiFwg/600x600/" /> -->
+    <figcaption>5</figcaption>
+  </figure>
+  <figure class="gallery-image">
+    <img src="https://m.media-amazon.com/images/I/31WSs7rM6JL._AC_UY218_.jpg" />
+    <!-- <img src="https://source.unsplash.com/wVMBn5sPQt0/600x800/" /> -->
+    <figcaption>6</figcaption>
+  </figure>
+  <figure class="gallery-image">
+    <img src="https://m.media-amazon.com/images/I/51YCjKclIeL._AC_UY218_.jpg" />
+   <!--  <img src="https://source.unsplash.com/dkv2CXSoVfs/800x800/" /> -->
+    <figcaption>7</figcaption>
+  </figure>
+  <figure class="gallery-image">
+    <img src="https://m.media-amazon.com/images/I/61jOwrZtCBL._AC_UY218_.jpg"  />
+   <!--  <img src="https://source.unsplash.com/6KHi0Yt2xWE/800x800/" /> -->
+    <figcaption>8</figcaption>
+  </figure>
+  <figure class="gallery-image">
+    <img src="https://m.media-amazon.com/images/I/61jOwrZtCBL._AC_UY218_.jpg"  />
+   <!--  <img src="https://source.unsplash.com/kxIE049IZ1g/800x800/" /> -->
+    <figcaption>9</figcaption>
+  </figure>
+  <figure class="gallery-image">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCcNfHkwAn6vmTuKJIZQvdoFPsHOeByDFGhA&usqp=CAU"  />
+   <!--  <img src="https://source.unsplash.com/PteeDvACFak/800x800/" /> -->
+    <figcaption>Nicole</figcaption>
+  </figure>
+ <!--  <figure class="gallery-image">
+    <img src="https://source.unsplash.com/hUp58GsPKAw/800x800/" />
+    <figcaption>11</figcaption>
+  </figure> -->
+  <figure class="gallery-image">
+    <img src="https://ci3.googleusercontent.com/proxy/au8XOayPbebjVCOYhgKFO6uwpYFGPWyexTAs1DMFUtXPCvcKzj6HBOtQjxCzHK_rFIgGcydehwq-vkABmJExCSvEkAeGvbsOlA=s0-d-e1-ft#https://pbs.twimg.com/media/Evt7i85XYAEFdFk.jpg:mosaic" />
+    <!-- <img src="https://source.unsplash.com/bBC7g-K9J6E/800x800/" /> -->
+    <figcaption>Roger</figcaption>
+  </figure>
+ <figure class="gallery-image">
+   <img src="https://huckfairman.com/wp-content/uploads/2018/12/huck2.jpg" />
+    <!-- <img src="https://source.unsplash.com/QjTUB3TMmLM/800x800/" /> -->
+    <figcaption>13</figcaption>
+  </figure>
+  <!-- <figure class="gallery-image">
+    <img src="https://source.unsplash.com/OwOyvyqT1vg/800x800/" />
+    <figcaption>14</figcaption>
+  </figure>
+  <figure class="gallery-image">
+    <img src="https://source.unsplash.com/N46IkbWUvMU/800x800/" />
+    <figcaption>15</figcaption>
+  </figure>
+  <figure class="gallery-image">
+    <img src="https://source.unsplash.com/FN-cedy6NHA/800x800/" />
+    <figcaption>16</figcaption>
+  </figure>
+  <figure class="gallery-image">
+    <img src="https://source.unsplash.com/keAS7rzOPMw/800x800/" />
+    <figcaption>17</figcaption>
+  </figure>
+  <figure class="gallery-image">
+    <img src="https://source.unsplash.com/5kHWjYZB45U/800x800/" />
+    <figcaption>18</figcaption>
+  </figure>
+  <figure class="gallery-image">
+    <img src="https://source.unsplash.com/yvKrdNXGN9M/800x800/" />
+    <figcaption>19</figcaption>
+  </figure> -->
+</main>
+  <script src="./index.js"></script>  
+</body>
+</html>
